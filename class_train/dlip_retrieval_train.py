@@ -450,7 +450,7 @@ def main():
 
     param = {
       "azure" : "True",
-      "connection_string" : "DefaultEndpointsProtocol=https;AccountName=shadetrainingdata;AccountKey=ARJHpGpb4tDyWY8MOc/4jtbbnbH+LF3W0r1pe9mReXbP+ZvdFWfMTwtKDowflQt8F2SgziL2gJ2Q+ASto1pcnQ==;EndpointSuffix=core.windows.net",
+      "connection_string" : "",
       "container_name" : "dlip-dataset",
       "multi" : "True",
       "ddp_server": "nccl",

@@ -136,7 +136,7 @@ class DLIPTrain:
         print("-"*60 + "\nLoading data...")
         # Load Data
         if self.azure == "True":
-            file_pattern = r'download_data_tokenize_\d+\.parquet\.brotli'
+            file_pattern = r'all_data_tokenize_\d+\.parquet\.brotli'
             all_data = AzureBlob(connection_string=self.connection_string, container_name=self.container_name, file_pattern=file_pattern)._concat_files()
         else:
             file_pattern = 'all_data_tokenize_*.parquet.brotli'
@@ -482,7 +482,7 @@ class DLIPTrain:
 def main():
     param = {
       "azure" : "True",
-      "connection_string" : "DefaultEndpointsProtocol=https;AccountName=shadetrainingdata;AccountKey=ARJHpGpb4tDyWY8MOc/4jtbbnbH+LF3W0r1pe9mReXbP+ZvdFWfMTwtKDowflQt8F2SgziL2gJ2Q+ASto1pcnQ==;EndpointSuffix=core.windows.net",
+      "connection_string" : "",
       "container_name" : "dlip-dataset",
       "multi" : "True",
       "ddp_server": "nccl",
