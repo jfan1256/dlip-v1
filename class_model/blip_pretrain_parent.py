@@ -1,10 +1,3 @@
-'''
- * Copyright (c) 2022, salesforce.com, inc.
- * All rights reserved.
- * SPDX-License-Identifier: BSD-3-Clause
- * For full license text, see LICENSE.txt file in the repo root or https://opensource.org/licenses/BSD-3-Clause
- * By Junnan Li
-'''
 from class_model.bert import BertConfig, BertModel, BertLMHeadModel, logger
 from transformers import BertTokenizer
 import transformers
@@ -16,7 +9,6 @@ transformers.logging.set_verbosity_error()
 import torch
 from torch import nn
 import torch.nn.functional as F
-
 
 class BLIP_Pretrain(nn.Module):
     def __init__(self,
