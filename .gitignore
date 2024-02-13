@@ -1,0 +1,17 @@
+# Pycharm
+__pycache__/
+*.pyc
+/dlip_replication.egg-info
+
+# API
+api_key.json
+
+# Jupyter Notebbok
+.ipynb_checkpoints
+
+# Data
+*.parquet.brotli
+*.csv
+*.pkl
+
+.idea

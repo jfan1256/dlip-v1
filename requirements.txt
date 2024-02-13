@@ -1,0 +1,16 @@
+# Python
+transformers
+pandas
+torch
+timm
+fairscale
+opencv-python
+matplotlib
+numpy
+ray
+pyarrow
+fastparquet
+
+# Azure Cloud
+azure-ai-ml
+azure-storage-blob
